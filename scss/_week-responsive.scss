@@ -1,0 +1,43 @@
+@media only screen and (max-width: 992px){
+    .recipe-week{
+        height: 680px;
+        &__slide{
+            display: block;
+            .recipe-week__img{
+                width: 100%;
+                height: 250px;
+            }
+            .recipe-week__content{
+                width: 100%;
+                .recipe-week__name{
+                    font-size: 22px;
+                }
+                .recipe-week__describe{
+                    font-size: 14px;
+                }
+                .item{
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .recipe-week{
+        height: 600px;
+        &__title{
+            font-size: 30px;
+            top: -35px;
+        }
+        .recipe-week__img{
+            height: 200px;
+        }
+        &__slide{
+            .recipe-week__content{
+                .item{
+                    display: none;
+                }
+            }
+        }
+    }
+}

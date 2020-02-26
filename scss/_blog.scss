@@ -1,0 +1,67 @@
+.blog{
+    background-color: rgb(250, 250, 250);
+    &__title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(59, 59, 59);
+        padding-top: 100px;
+    }
+    &__describe{
+        width: 600px;
+        text-align: center;
+        color: rgb(104, 104, 104);
+        padding: 20px 0;
+        font-size: 18px;
+        margin: 0 auto;
+        &::after{
+            content: '';
+            display: block;
+            width: 10px;
+            margin: 0 auto;
+            padding: 15px;
+            border-bottom: 2px solid rgb(85, 85, 85);
+        }
+    }
+    .block{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .blog-product{
+        width: 25%;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        //margin: 20px $margin;
+        box-shadow: 1px 1px 4px 1px rgba($color: #000000, $alpha: 0.2);
+        &__img{
+            img{
+                width: 100%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+        &__title{
+            font-size: 20px;
+            padding: 50px 30px 30px 30px;
+            color: rgb(65, 65, 65);
+            font-weight: bold;
+        }
+        &__describe{
+            padding: 0 30px;
+            color: rgb(80, 80, 80);
+            line-height: 1.5;
+        }
+        &__more{
+            padding: 30px;
+            a{
+                text-decoration: none;
+                color: $color-blue;
+                &:hover{
+                    color: rgb(90, 90, 90);
+                }
+            }
+        }
+    }
+}

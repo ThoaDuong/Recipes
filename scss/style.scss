@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', ;
+}
+@font-face{
+    font-family: font;
+    src: url(../public/fonts/Simple-Line-Icons.woff);
+}
+@keyframes rotation { 
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+//Definition of attributes
+$margin:10%;
+$color-blue: #267DF4;
+//Class main button
+.button{
+    text-transform: uppercase;
+    padding: 13px 25px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    transition: 0.4s;
+    &:hover{
+        cursor: pointer;
+    }
+}
+@import 'header';
+@import 'header-responsive';
+.wrapper{
+    @import 'categories';
+    @import 'categories-responsive';
+
+    @import 'popular';
+    @import 'popular-responsive';
+
+    @import 'week';
+    @import 'week-responsive';
+
+    @import 'blog';
+    @import 'blog-responsive';
+
+    @import 'email';
+    @import 'email-responsive';
+}
+@import 'footer';
+@import 'footer-responsive';
+
+
+
+
+

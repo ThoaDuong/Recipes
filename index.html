@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="scss/style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- JS style -->
+    <script src="js/style.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__menu">
+                <a class="header__logo" href="#">
+                    <img src="public/images/logo@2x.png" alt="Logo">
+                </a>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li><a class="active" href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li class="recipes">
+                                <a class="recipes__name" href="#">Recipes <i class="fa fa-angle-down"></i></a>
+                                <!-- Recipes level 1 -->
+                                <ul class="recipes__level1">
+                                    <li><a href="#">Recipe Single Page</a></li>
+                                    <li><a href="#">Popular</a></li>
+                                    <li><a href="#">Recent</a></li>
+                                    <li><a href="#">Most liked</a></li>
+                                    <li><a href="#">Most Commented</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a class="search-icon" href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__search">
+                <input class="input-search" type="text" placeholder="TYPE & HIT ENTER..">
+                <span class="close-icon"><i class="fa fa-times"></i></span>
+            </div>
+            <!-- Menu responsive -->
+            <div class="header__menu-responsive">
+                <div class="memu">
+                    <a href="#" class="menu-icon"><i class="fa fa-bars"></i></a>
+                </div>
+                <img src="public/images/logo@2x.png" alt="Logo">
+                <div class="search">
+                    <span class="search-icon"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+            <!-- Nav responsive list item -->
+            <div class="header__nav-responsive">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li class="recipes">
+                            <a class="recipes__name--res" href="#">Recipes <i class="fa fa-angle-down"></i></a>
+                            <!-- Recipes level 1 -->
+                            <ul class="recipes__level1--res">
+                                <li><a href="#">Recipe Single Page</a></li>
+                                <li><a href="#">Popular</a></li>
+                                <li><a href="#">Recent</a></li>
+                                <li><a href="#">Most liked</a></li>
+                                <li><a href="#">Most Commented</a></li>
+                            </ul>
+                            
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="view-recipe">
+                <div class="view-recipe__title">Avocado and Egg Toast</div>
+                <div class="view-recipe__describe">
+                    Appropriately provide access to front-end potentialities via synergistic experiences.
+                    Competently maximize open-source imperatives after corporate systems.
+                </div>
+                <div class="view-recipe__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span><b>4.0</b> (2,123 Reviews)</span>
+                </div>
+                <div class="view-recipe__item">
+                    <div class="block">
+                        <img src="public/images/icons/timer.svg" alt="Timer">
+                        <p>40 Mins</p>
+                    </div>
+                    <div class="block">
+                        <img src="public/images/icons/ingredients.svg" alt="Ingredients">
+                        <p>9 Ingredients</p>
+                    </div>
+                    <div class="block">
+                        <img src="public/images/icons/kcal.svg" alt="Kcal">
+                        <p>600 Kcal</p>
+                    </div>
+                </div>
+                <div class="view-recipe__button">
+                    <button class="button">View Recipe <i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="header__img">
+                <img src="public/images/1.png" alt="Header image">
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="categories">
+            <div class="categories__title">Hello & Welcome</div>
+            <div class="categories__content">
+                I'm John Doe, Authoritatively communicate world-class alignments before low-risk high-yield growth strategies.
+                Synergistically envisioneer transparent niches after dynamic "outside the box" thinking.
+                Uniquely patnerships before synergistic niche markets.
+                <br><br>
+                Cheers to all that you do!
+            </div>
+            <div class="categories__sign">
+                <img src="public/images/sign.png" alt="Sign">
+                <p>Browese by Category</p>
+            </div>
+            <div class="categories__block">
+                <div class="category -breakfast">
+                    <div class="category__icon">
+                        <img src="public/images/icons/bf.svg" alt="Breakfast icon">
+                    </div>
+                    <div class="category__name">Breakfast</div>
+                </div>
+                <div class="category -lunch">
+                    <div class="category__icon">
+                        <img src="public/images/icons/lunch.svg" alt="Lunch icon">
+                    </div>
+                    <div class="category__name">Lunch</div>
+                </div>
+                <div class="category -dinner">
+                    <div class="category__icon">
+                        <img src="public/images/icons/dinner.svg" alt="Dinner icon">
+                    </div>
+                    <div class="category__name">Dinner</div>
+                </div>
+                <div class="category -desserts">
+                    <div class="category__icon">
+                        <img src="public/images/icons/desserts.svg" alt="Desserts icon">
+                    </div>
+                    <div class="category__name">Desserts</div>
+                </div>
+                <div class="category -vegan">
+                    <div class="category__icon">
+                        <img src="public/images/icons/vegan.svg" alt="Vegan icon">
+                    </div>
+                    <div class="category__name">Vegan</div>
+                </div>
+                <div class="category -seafood">
+                    <div class="category__icon">
+                        <img src="public/images/icons/seafood.svg" alt="Seafood icon">
+                    </div>
+                    <div class="category__name">Seafood</div>
+                </div>
+                <div class="category -bevarages">
+                    <div class="category__icon">
+                        <img src="public/images/icons/drinks.svg" alt="Bevarages icon">
+                    </div>
+                    <div class="category__name">Bevarages</div>
+                </div>
+            </div>
+        </div>
+        <div class="popular">
+            <div class="popular-left">
+                <div class="popular-left--blur"></div>
+                <div class="popular-left__center">
+                    <div class="popular-left__title">Latest <br> Recipes</div>
+                    <div class="popular-left__button">
+                        <button class="button">View all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-right">
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/1 (1).png" alt="1">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>GUNTHER BEARD</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.6
+                        </div>
+                    </div>
+                    <div class="item__name">Green Goddess Avocado Hummus</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Dec 26, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/2.png" alt="2">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>CHAUFFINA CARR</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.9
+                        </div>
+                    </div>
+                    <div class="item__name">Strawberry Kiwi Healthy Bowl</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Dec 1, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/3.png" alt="3">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>ERIC WIDGET</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.3
+                        </div>
+                    </div>
+                    <div class="item__name">Rustic Sweet Treat</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Nov 20, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/4.png" alt="4">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>QUICHE HOLL</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.5
+                        </div>
+                    </div>
+                    <div class="item__name">A Delicious Homemade Breakfast</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Oct 2, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/5.png" alt="5">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>NORMAN GOR</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.5
+                        </div>
+                    </div>
+                    <div class="item__name">Pumpkin Bars with Cream Cheese Frosting</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Sep 18, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/6.png" alt="6">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>DRUID WEN</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.0
+                        </div>
+                    </div>
+                    <div class="item__name">The Best Homemade Pizza Recipes</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Sep 7, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/7.png" alt="7">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>BAILEY WONGER</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.5
+                        </div>
+                    </div>
+                    <div class="item__name">Baked Salmon with Sweet-Potaties</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Aug 12, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/8.png" alt="8">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>PELICAN STEVE</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.2
+                        </div>
+                    </div>
+                    <div class="item__name">A Kollam Grilled Cheese with Vegetables</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Aug 8, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/9.png" alt="9">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>MALCOLM FUNC</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.5
+                        </div>
+                    </div>
+                    <div class="item__name">Garden Veggie Delux Pizza</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Jul 26, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/10.png" alt="10">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>DIANNE AMETER</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.5
+                        </div>
+                    </div>
+                    <div class="item__name">Spinach Artichoke Dip Pasta with Chicken</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> Jun 15, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/11.png" alt="11">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>WEIR DOE</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.4
+                        </div>
+                    </div>
+                    <div class="item__name">Quick Black Pepper Pork Lunch</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> May 11, 2019
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="public/images/popular/12.png" alt="12">
+                    </div>
+                    <div class="item__about">
+                        <div class="item__author">By <b>NILES PEPPER</b></div>
+                        <div class="item__rating">
+                            <i class="fa fa-star"></i> 4.0
+                        </div>
+                    </div>
+                    <div class="item__name">Afternoon Plates of Pasta</div>
+                    <div class="item__date">
+                        <i class="fa fa-calendar"></i> May 4, 2019
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-week">
+            <div class="wrapper-block">
+                <div class="recipe-week__title">Recipes of the Week</div>
+                <div class="recipe-week__slidefirst">
+                    <div class="recipe-week__slide -slide-first">
+                        <div class="recipe-week__img"></div>
+                        <div class="recipe-week__content">
+                            <div class="recipe-week__name">Earthy Pasta with Chestnuts and Mushrooms</div>
+                            <div class="recipe-week__describe">
+                                Distinctively leverage other's user friendly methods of empowerment and magnetic niche markets. 
+                                Appropriately utilize accurate web-readiness through integrated results. 
+                                Globally pursue high-quality web-readiness with value-added "outside the box" thinking. 
+                                Dramatically optimize next-generation information after turnkey technologies.
+                            </div>
+                            <div class="item">
+                                <div class="block">
+                                    <img src="public/images/icons/timer-dark.svg" alt="Timer">
+                                    <p>40 Mins</p>
+                                </div>
+                                <div class="block">
+                                    <img src="public/images/icons/ingredients-dark.svg" alt="Ingredients">
+                                    <p>9 Ingredients</p>
+                                </div>
+                                <div class="block">
+                                    <img src="public/images/icons/kcal-dark.svg" alt="Kcal">
+                                    <p>600 Kcal</p>
+                                </div>
+                            </div>
+                            <div class="recipe-week__button">
+                                <button class="button">View Recipes <i class="fa fa-angle-right"></i></button>
+                            </div>
+                            <div class="recipe-week__icon">
+                                <span class="slide-right-icon"><i class="fa fa-angle-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-week__slidesecond">
+                    <div class="recipe-week__slide -slide-second">
+                        <div class="recipe-week__img"></div>
+                        <div class="recipe-week__content">
+                            <div class="recipe-week__name">Wholesome Pancakes with Orange</div>
+                            <div class="recipe-week__describe">
+                                Distinctively leverage other's user friendly methods of empowerment and magnetic niche markets. 
+                                Appropriately utilize accurate web-readiness through integrated results. 
+                                Globally pursue high-quality web-readiness with value-added "outside the box" thinking. 
+                                Dramatically optimize next-generation information after turnkey technologies.
+                            </div>
+                            <div class="item">
+                                <div class="block">
+                                    <img src="public/images/icons/timer-dark.svg" alt="Timer">
+                                    <p>32 Mins</p>
+                                </div>
+                                <div class="block">
+                                    <img src="public/images/icons/ingredients-dark.svg" alt="Ingredients">
+                                    <p>5 Ingredients</p>
+                                </div>
+                                <div class="block">
+                                    <img src="public/images/icons/kcal-dark.svg" alt="Kcal">
+                                    <p>300 Kcal</p>
+                                </div>
+                            </div>
+                            <div class="recipe-week__button">
+                                <button class="button">View Recipes <i class="fa fa-angle-right"></i></button>
+                            </div>
+                            <div class="recipe-week__icon">
+                                <span class="slide-left-icon"><i class="fa fa-angle-left"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="blog__title">Our Latest Updates</div>
+            <div class="blog__describe">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quae veniam quam incidunt eos eaque esse ducimus dolore, velit, laborum dignissimos?
+            </div>
+            <div class="block">
+                <div class="blog-product">
+                    <div class="blog-product__img">
+                        <img src="public/images/blog/piping-bag.jpg" alt="Image">
+                    </div>
+                    <div class="blog-product__title">How to Make Paper Piping-Bag</div>
+                    <div class="blog-product__describe">
+                        Authoritatively productize 24/7 platforms authoritatively rather than enterprise customer service.
+                    </div>
+                    <div class="blog-product__more">
+                        <a href="#">Learn more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-product">
+                    <div class="blog-product__img">
+                        <img src="public/images/blog/healthy-food.jpg" alt="Image">
+                    </div>
+                    <div class="blog-product__title">Top 10 Healthy Foods of 2019</div>
+                    <div class="blog-product__describe">
+                        Dramatically initiate authoritatively interactive e-tailers with enterprise results phosfluorescently.
+                    </div>
+                    <div class="blog-product__more">
+                        <a href="#">Learn more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-product">
+                    <div class="blog-product__img">
+                        <img src="public/images/blog/meal-prep.jpg" alt="Image">
+                    </div>
+                    <div class="blog-product__title">Top Vegetarian Meal Preps</div>
+                    <div class="blog-product__describe">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </div>
+                    <div class="blog-product__more">
+                        <a href="#">Learn more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="email">
+            <div class="email__icon">
+                <img src="public/images/icons/email.svg" alt="Email icon">
+            </div>
+            <div class="email__title">Stay Updated!</div>
+            <div class="email__describe">Easy Recipes and Cookings right to your Inbox</div>
+            <div class="email__form">
+                <form>
+                    <input class="email__input" type="text" placeholder="Enter your email address..">
+                    <button class="email__button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer">
+                <div class="footer__menu">
+                    <div class="block">
+                        <p class="block__title">Download App</p>
+                        <ul>
+                            <li><a href="#">
+                                <img src="public/images/appstore.png" alt="Appstore">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="public/images/googleplay.png" alt="GooglePlay">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <p class="block__title">Support</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <p class="block__title">Trending</p>
+                        <ul>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <p class="block__title">Features</p>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Paid with Moblie</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__line">
+                    <div class="footer__copyright">Copyrights © 2014 All Rights Reserved by Canvas Inc.</div>
+                    <div class="footer__social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <div class="footer__term">
+                        <span><a href="#">Terms of Use</a></span>
+                        /
+                        <span><a href="#">Privacy Policy</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

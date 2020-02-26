@@ -1,0 +1,20 @@
+@media only screen and (max-width:600px){
+    .email{
+        margin-top: 50px;
+        padding: 60px $margin;
+        &__describe{
+            font-size: 16px;
+        }
+        &__form{
+            margin-top: 50px;
+            .email__input{
+                width: 170px;
+                font-size: 12px;
+            }
+            .email__button{
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    }
+}

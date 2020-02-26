@@ -1,0 +1,57 @@
+@media only screen and (max-width: 992px) {
+    .popular{
+        display: block;
+        height: auto;
+        .popular-left{
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            &--blur{
+                height: 300px;
+            }
+        }
+        .popular-right{
+            width: 100%;
+            height: auto;
+            &__about{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .popular{
+        display: block;
+        .popular-left{
+            width: 100%;
+            height: 200px;
+            background-position: center;
+            &--blur{
+                height: 200px;
+            }
+            &__title{
+                font-size: 50px;
+            }
+            &__button{
+                margin-top: 20px;
+                button{
+                    font-size: 14px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+        .popular-right{
+            width: 100%;
+            height: auto;
+            .item{
+                width: 50%;
+                &__about{
+                    font-size: 10px;
+                }
+                &__name{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

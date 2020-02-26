@@ -1,0 +1,129 @@
+
+.recipe-week{
+    margin: $margin;
+    height: 600px;
+    .wrapper-block{
+        position: relative;
+    }
+    &__title{
+        position: absolute;
+        top: -45px;
+        left: 0;
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(212, 212, 212);
+    }
+    &__slide{
+        box-shadow: 3px 3px 6px 3px rgba($color: #000000, $alpha: 0.3);
+        display: flex;
+        position: relative;
+        .recipe-week__img{
+            width: 40%;
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+        }
+        .recipe-week__content{
+            width: 60%;
+            padding: 5%;
+            background-color: #fff;
+            .recipe-week__name{
+                font-size: 22px;
+                font-weight: bold;
+                margin: 40px 0;
+                color: rgb(65, 65, 65);
+            }
+            .recipe-week__describe{
+                color: rgb(104, 104, 104);
+                line-height: 2;
+                margin: 40px 0;
+            }
+            .item{
+                width: 100%;
+                text-align: center;
+                height: 25%;
+                .block{
+                    float: left;
+                    margin-left: 8%;
+                }
+                img{
+                    width: 30px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-weight: bold;
+                    color: rgb(100, 100, 100);
+                }
+                .block:not(:first-child){
+                    border-left: 1px solid rgb(224, 224, 224);
+                    padding-left: 8%;
+                }
+            }
+            .recipe-week__button{
+                clear: both;
+                button{
+                    background-color:$color-blue;
+                    color: white;
+                    text-transform: none;
+                    &:hover{
+                        background-color: rgb(66, 66, 66);
+                    }
+                }
+            }
+        }
+        .recipe-week__icon{
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate(-60%, -100%);
+            border: 1px solid rgb(185, 185, 185);
+            background-color: #fff;
+            border-radius: 50%;
+            color: rgb(90, 90, 90);
+            transition: 0.4s;
+            i{
+                font-size: 18px;
+                padding: 10px 15px;
+            }
+            &:hover{
+                background-color: $color-blue;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &__slidefirst{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .-slide-first{
+            .recipe-week__img{
+                background-image: url("../public/images/recipe-week.jpg");
+            }
+            .recipe-week__icon{
+                position: absolute;
+                top: 55%;
+                left: 100%;
+                transform: translate(-55%, -100%);
+            }
+        }
+    }
+    &__slidesecond{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        .-slide-second{
+            .recipe-week__img{
+                background-image: url("../public/images/recipe-week-2.jpg");
+            }
+            .recipe-week__icon{
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                transform: translate(-50%, 0%);
+            }
+        }
+    }
+}

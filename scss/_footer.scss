@@ -1,0 +1,65 @@
+.footer{
+    margin-top: 50px;
+    &__menu{
+        display: flex;
+        justify-content: center;
+        .block{
+            margin: 40px;
+            &__title{
+                font-size: 20px;
+                font-weight: bold;
+                color: rgb(82, 82, 82);
+                margin-bottom: 50px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: rgb(122, 122, 122);
+                        line-height: 2;
+                        img{
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__line{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px $margin;
+        background-color: rgb(247, 247, 247);
+        color: rgb(90, 90, 90);
+        .footer__term{
+            a{
+                color: rgb(90, 90, 90);
+                text-decoration: none;
+            }
+        }
+        .footer__social{
+            .fa{
+                padding: 8px;
+                border-radius: 5px;
+                color: white;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .fa-facebook{
+                padding: 8px 12px;
+                background-color: rgb(55, 55, 228);
+            }
+            .fa-youtube{
+                background-color: rgb(212, 45, 45);
+            }
+            .fa-instagram{
+                background-color: rgb(238, 166, 57);
+            }
+            .fa-twitter{
+                background-color: rgb(74, 141, 228);
+            }
+        }
+    }
+}

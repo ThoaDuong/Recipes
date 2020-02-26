@@ -1,0 +1,103 @@
+.categories{
+    width: 100%;
+    text-align: center;
+    &__title{
+        font-size: 45px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 150px;
+        color: rgb(68, 68, 68);
+    }
+    &__content{
+        font-size: 18px;
+        padding: 30px 22%;
+        color: rgb(121, 121, 121);
+        line-height: 1.5;
+    }
+    &__sign{
+        img{
+            margin-top: 10px;
+            margin-bottom: 40px;
+            width: 150px;
+        }
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(68, 68, 68);
+            margin-bottom: 30px;
+        }
+    }
+    &__block{
+        display: flex;
+        justify-content: center;
+        .category{
+            position: relative;
+            background-position: 50% 50%;
+            border-radius: 30px;
+            height: 300px;
+            width: 60px;
+            transition: 0.4s;
+            margin: 10px;
+            &__icon{
+                position: absolute;
+                top: 80%;
+                left: 10%;
+                transition: 0.4s;
+                img{
+                    background-color: white;
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 45px;
+                    padding: 5px;
+                }
+            }
+            &__name{
+                position: absolute;
+                top: 75%;
+                left: 25%;
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                transform-origin: 0% 0%;
+                transform: rotate(-90deg);
+            }
+            &:hover{
+                width: 260px;
+                height: 300px;
+                cursor: pointer;
+            }
+            &:hover .category__icon{
+                transform: rotate(360deg);
+                left: 5%;
+            }
+            &:hover .category__name{
+                left: 30%;
+                top: 84%;
+                transform: rotate(0);
+                transform-origin: 0% 0%;
+            }
+        }
+        .-breakfast{
+            background-image: url("../public/images/categories/bf.jpg");
+        }
+        .-lunch{
+            background-image: url("../public/images/categories/lunch.jpg");
+        }
+        .-dinner{
+            background-image: url("../public/images/categories/dinner.jpg");
+        }
+        .-desserts{
+            background-image: url("../public/images/categories/desserts.jpg");
+        }
+        .-vegan{
+            background-image: url("../public/images/categories/veg.jpg");
+        }
+        .-seafood{
+            background-image: url("../public/images/categories/seafood.jpg");
+        }
+        .-bevarages{
+            background-image: url("../public/images/categories/drinks.jpg");
+        }
+    }
+}
